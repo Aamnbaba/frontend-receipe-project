@@ -14,7 +14,6 @@
   --Brown800: #854632;
   --Rose800: #7b284f;
   --Rose50: #fff5fa;
-  --para-color: #595552;
   --para-bg: #fff7fc;
 }
 
@@ -34,10 +33,15 @@ body {
   padding: 0 1.2rem;
 }
 
+b {
+  font-weight: 700;
+}
+
 p,
 li,
 td {
   font-size: 1.4rem;
+  color: var(--Stone600);
 }
 
 .main-heading {
@@ -111,6 +115,11 @@ li {
   margin-bottom: 1rem;
 }
 
+li::marker {
+  color: var(--Brown800);
+  font-weight: 700;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -146,12 +155,12 @@ img {
 }
 
 /***** Media Queries Section *****/
-@media (width<= 1440px) {
+@media (width <= 1440px) {
   html {
     font-size: 62.5%;
   }
 }
-@media (width<= 375px) {
+@media (width <= 375px) {
   html {
     font-size: 63%;
   }
